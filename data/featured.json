@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+      "repo": "workflow-templates",
+      "label": "workflow-templates",
+      "url": "https://github.com/gargiolastech/workflow-templates"
+    },
+    {
+      "repo": "template-repo-base",
+      "label": "template-repo-base",
+      "url": "https://github.com/gargiolastech/template-repo-base"
+    }
+  ]
+}

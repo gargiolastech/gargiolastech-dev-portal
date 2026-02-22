@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GargiolasTech • Public Site</title>
+  <meta name="description" content="Futuristic dev-centric public site: portfolio, repo hub, architecture vision." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <img class="logo" src="/assets/logo.svg" alt="GargiolasTech" />
+      <div>
+        <div class="title">GargiolasTech</div>
+        <div class="subtitle">Public Site</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a id="nav-home" href="/">Home</a>
+      <a id="nav-repos" href="/repos">Repositories</a>
+      <a id="nav-about" href="/about">About</a>
+      <a id="nav-vision" href="/vision">Vision</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Build systems. Ship value. Keep it operable.</h1>
+      <p>
+        Hub pubblico di <b>GargiolasTech</b>: portfolio tecnico, catalogo repository auto-aggiornato e
+        visione architetturale. Stile <span class="kbd">futuristico</span>, contenuti <span class="kbd">dev-centric</span>.
+      </p>
+      <div class="pills" style="margin-top:14px">
+        <span class="pill accent">.NET • DDD • Clean Architecture</span>
+        <span class="pill purple">Modular Monolith • CQRS</span>
+        <span class="pill orange">DevOps • CI/CD • Governance</span>
+      </div>
+    </section>
+
+    <div class="section-title">
+      <h2>Start here</h2>
+      <div class="hint">Suggerimento: premi <span class="kbd">Repositories</span> per la lista aggiornata automaticamente.</div>
+    </div>
+
+    <section class="grid">
+      <div class="card">
+        <h3>📦 Repositories</h3>
+        <p>Lista automatica dei repo della tua org GitHub con stars, language, last update, filtri per topic e ricerca.</p>
+        <div class="pills">
+          <a class="pill accent" href="/repos">Apri Repo Hub →</a>
+          <span class="pill">Auto-sync via GitHub Actions</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>👤 About</h3>
+        <p>Presentazione personale: stack, principi, aree di focus e link rapidi.</p>
+        <div class="pills">
+          <a class="pill purple" href="/about">Vai alla pagina About →</a>
+          <span class="pill">Bio + highlights</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>🧠 Architecture Vision</h3>
+        <p>Linee guida: modular monolith, boundaries, governance, operabilità e automazione.</p>
+        <div class="pills">
+          <a class="pill orange" href="/vision">Leggi la Vision →</a>
+          <span class="pill">Principles & decisions</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>🔗 Links</h3>
+        <p>Collegamenti rapidi. Personalizza in <span class="kbd">/about</span> o nel file <span class="kbd">data/profile.json</span>.</p>
+        <div class="pills">
+          <a class="pill" href="https://github.com/gargiolastech" target="_blank" rel="noreferrer">GitHub org →</a>
+          <a class="pill" href="https://github.com/gargiolastech?tab=repositories" target="_blank" rel="noreferrer">Repos →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="meta">
+        <div><span class="strong">Generated</span>: 2026-02-22 12:38 UTC</div>
+        <div><span class="strong">Default org</span>: gargiolastech</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>GargiolasTech • Public Site</span>
+    <span>•</span>
+    <a href="/repos">Repo Hub</a>
+    <span>•</span>
+    <a href="/docs">Docs</a>
+  </footer>
+
+  <script src="/assets/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "route": "/data/*",
+      "headers": {
+        "cache-control": "no-store"
+      }
+    },
+    {
+      "route": "/*",
+      "allowedRoles": [
+        "anonymous"
+      ]
+    }
+  ]
+}

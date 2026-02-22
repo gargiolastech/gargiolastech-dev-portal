@@ -1,0 +1,10 @@
+{
+  "name": "Giuseppe \u201cgargiolas\u201d",
+  "headline": "Senior Backend Developer (.NET) \u2022 DevOps-minded \u2022 Modular monolith builder",
+  "focus": "Costruisco sistemi .NET con confini chiari (bounded contexts), pipeline CI/CD robuste e tooling riutilizzabile per team e progetti.",
+  "stack": ".NET 9 \u2022 EF Core \u2022 PostgreSQL/SQL Server \u2022 GitHub Actions \u2022 Azure \u2022 PowerShell \u2022 n8n",
+  "links": {
+    "githubOrg": "https://github.com/gargiolastech",
+    "githubProfile": "https://github.com/gargiolas"
+  }
+}

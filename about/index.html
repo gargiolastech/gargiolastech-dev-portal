@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About • GargiolasTech</title>
+  <meta name="description" content="Personal presentation page." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <img class="logo" src="/assets/logo.svg" alt="GargiolasTech" />
+      <div>
+        <div class="title">GargiolasTech</div>
+        <div class="subtitle">About</div>
+      </div>
+    </div>
+    <nav class="nav">
+      <a id="nav-home" href="/">Home</a>
+      <a id="nav-repos" href="/repos">Repositories</a>
+      <a id="nav-about" href="/about">About</a>
+      <a id="nav-vision" href="/vision">Vision</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1 id="name">Giuseppe “gargiolas”</h1>
+      <p id="headline">Senior Backend Developer (.NET) • DevOps-minded • Modular monolith builder</p>
+      <div class="pills" style="margin-top:14px">
+        <span class="pill accent">DDD • Clean Architecture</span>
+        <span class="pill purple">CQRS • Event-driven integration</span>
+        <span class="pill orange">CI/CD • Tooling • Governance</span>
+      </div>
+    </section>
+
+    <div class="section-title">
+      <h2>Bio</h2>
+      <div class="hint">Questa pagina si configura in <span class="kbd">/data/profile.json</span></div>
+    </div>
+
+    <section class="grid">
+      <div class="card">
+        <h3>🧭 Focus</h3>
+        <p id="focus">Costruisco sistemi .NET con confini chiari (bounded contexts), pipeline CI/CD robuste e tooling riutilizzabile per team e progetti.</p>
+        <div class="pills">
+          <span class="pill">Modular Monolith</span>
+          <span class="pill">Clean boundaries</span>
+          <span class="pill">Performance</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>🧰 Stack</h3>
+        <p id="stack">.NET 9 • EF Core • PostgreSQL/SQL Server • GitHub Actions • Azure • PowerShell • n8n</p>
+        <div class="pills">
+          <span class="pill accent">.NET</span>
+          <span class="pill purple">Azure</span>
+          <span class="pill orange">DevOps</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>🔗 Links</h3>
+        <p>
+          <a id="githubLink" href="https://github.com/gargiolastech" target="_blank" rel="noreferrer" class="pill accent">GitHub org →</a>
+          <a id="profileLink" href="https://github.com/gargiolas" target="_blank" rel="noreferrer" class="pill purple">GitHub profile →</a>
+        </p>
+        <p style="margin-top:12px;color:var(--muted)">
+          Aggiungi qui LinkedIn, email, blog, docs.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>⭐ Featured</h3>
+        <p>Seleziona repo “in evidenza” in <span class="kbd">/data/featured.json</span>. Verranno mostrati qui.</p>
+        <div id="featured" class="pills" style="margin-top:12px"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>GargiolasTech • About</span><span>•</span><a href="/repos">Repo Hub</a>
+  </footer>
+
+  <script type="module" src="/about/about.js"></script>
+  <script src="/assets/nav.js"></script>
+</body>
+</html>
