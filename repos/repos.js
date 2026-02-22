@@ -172,13 +172,28 @@ async function load(org){
   els.topicChips.innerHTML = '';
 
   const res = await fetch(`/data/repos.json?ts=${Date.now()}`, { cache: 'no-store' });
-  if(!res.ok) throw new Error(`Unable to load /data/repos.json (${res.status})`);
+  if(!res.ok) throw new Error(`Unab
+  le to load /data/repos.json (${res.status})`);
   const payload = await res.json();
-  const data = payload[org] ?? payload.default ?? payload;
+  const data = payload?.[org] ?? payload?.default ?? payload;
 
-  state.repos = data.repos ?? [];
+if (Array.isArray(data)) {
+  // formato: [ ...repos ]
+  state.repos = data;
+  state.generatedAt = null;
+} else if (Array.isArray(data?.repos)) {
+  // formato: { repos: [...] } o { org: { repos:[...] } }
+  state.repos = data.repos;
   state.generatedAt = data.generated_at ?? null;
-
+} else if (Array.isArray(payload?.repos)) {
+  // formato: { repos:[...] }
+  state.repos = payload.repos;
+  state.generatedAt = payload.generated_at ?? null;
+} else {
+  state.repos = [];
+  state.generatedAt = null;
+}
+  
   const allTopics = new Set();
   for(const r of state.repos){
     for(const t of (r.topics ?? [])) allTopics.add(t);
