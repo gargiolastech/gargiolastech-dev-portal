@@ -1,7 +1,24 @@
 {
   "gargiolastech": {
-    "generated_at": "2026-03-01T06:23:38.700Z",
+    "generated_at": "2026-03-01T12:17:01.801Z",
     "repos": [
+      {
+        "name": "backstage-catalog",
+        "full_name": "gargiolastech/backstage-catalog",
+        "html_url": "https://github.com/gargiolastech/backstage-catalog",
+        "description": null,
+        "stargazers_count": 0,
+        "forks_count": 0,
+        "open_issues_count": 0,
+        "language": null,
+        "topics": [],
+        "updated_at": "2026-03-01T10:11:51Z",
+        "pushed_at": "2026-03-01T09:50:39Z",
+        "created_at": "2026-03-01T09:49:47Z",
+        "archived": false,
+        "visibility": "public",
+        "homepage": null
+      },
       {
         "name": "gargiolastech-dev-portal",
         "full_name": "gargiolastech/gargiolastech-dev-portal",
@@ -25,8 +42,8 @@
           "portfolio",
           "static-web-app"
         ],
-        "updated_at": "2026-03-01T00:52:34Z",
-        "pushed_at": "2026-03-01T00:52:30Z",
+        "updated_at": "2026-03-01T06:23:42Z",
+        "pushed_at": "2026-03-01T06:23:39Z",
         "created_at": "2026-02-22T12:44:07Z",
         "archived": false,
         "visibility": "public",
